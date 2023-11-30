@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #F2F2F2;
+}
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+
+img {
+  border: none;
+  color: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__logo {
+  max-width: 220px;
+}
+.header__nav {
+  display: flex;
+  gap: 50px;
+}
+.header__link {
+  color: #000;
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  transition: 0.5s;
+}
+.header__link:hover {
+  font-size: 16.5px;
+}
+.header__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+}
+.header__link:hover:before {
+  width: 100%;
+}
+.header__link::before {
+  transition: width 0.5s;
+}/*# sourceMappingURL=style.css.map */
