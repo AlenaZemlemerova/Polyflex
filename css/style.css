@@ -37,36 +37,43 @@ a {
 }
 
 /* Header */
+header {
+  border-bottom: 1px solid #000;
+  background: #F2F2F2;
+}
+
 .header {
-  padding-top: 60px;
+  padding-top: 59.5px;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 0px;
 }
 .header__logo {
   max-width: 220px;
+  margin-bottom: -2.5px;
 }
 .header__nav {
   display: flex;
-  gap: 50px;
+  gap: 60px;
 }
 .header__link {
   color: #000;
   font-family: PT Sans;
-  font-size: 17px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
   position: relative;
   transition: 0.5s;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .header__link::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: 7px;
   width: 0;
   height: 1px;
   background-color: #000;
@@ -82,19 +89,14 @@ a {
 .banner {
   background: linear-gradient(261deg, #23145F 2.4%, #0D023D 98.97%);
   position: relative;
-  min-height: 750px;
-}
-
-.banner-box {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
+  height: 72.8vh;
 }
 
 .banner-left {
-  z-index: 10;
-  position: absolute;
-  top: 21%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 55vh;
 }
 .banner-left__title {
   color: #FFF;
@@ -105,6 +107,8 @@ a {
   line-height: 120%;
   letter-spacing: 0.28px;
   margin-bottom: 20px;
+  margin-left: -1.5px;
+  z-index: 10;
 }
 .banner-left__subtitle {
   color: #FFF;
@@ -114,8 +118,9 @@ a {
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.096px;
-  max-width: 578px;
+  max-width: 580px;
   margin-bottom: 40px;
+  margin-left: 2px;
 }
 .banner-left__buttons {
   display: flex;
@@ -128,9 +133,17 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  padding: 18px 32px;
+  padding: 17px 31px;
   border: 1px solid #FFF;
   box-shadow: 0px 4px 8px 0px rgba(13, 4, 51, 0.15), 0px 0px 4px 0px rgba(13, 4, 51, 0.04);
+  margin-left: 3.6px;
+  transition: 0.5s;
+}
+.banner-left__button-link:hover {
+  background: #F6BA60;
+  color: #000;
+  margin-top: -15px;
+  margin-bottom: 15px;
 }
 .banner-left__button-form {
   color: #000;
@@ -139,25 +152,21 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  padding: 18px 55px;
+  padding: 16px 53px;
   background: #D09B4B;
   border: 1px solid #D9D9D9;
   box-shadow: 0px 4px 8px 0px rgba(13, 4, 51, 0.15), 0px 0px 4px 0px #0D0433;
+  transition: 0.5s;
+}
+.banner-left__button-form:hover {
+  margin-top: -15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px #D09B4B;
 }
 
 .banner-right__img {
   position: absolute;
   top: 0;
   right: 0;
-}
-.banner-right__border {
-  width: 295px;
-  height: 400px;
-  position: absolute;
-  top: 12.5%;
-  right: 23.4%;
-  border-top: 10px solid #F9DC78;
-  border-right: 10px solid #F9DC78;
-  border-bottom: 110px solid #F9DC78;
-  border-left: 10px solid #F9DC78;
+  height: 72.8vh;
 }/*# sourceMappingURL=style.css.map */
