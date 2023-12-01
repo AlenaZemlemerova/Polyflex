@@ -7,16 +7,28 @@
     padding: 0
     box-sizing: border-box
 
+::-webkit-scrollbar 
+  width: 0
+
+
 body
-    font-family: 'Montserrat', sans-serif
     background-color: $backgroundColor
 
 h2
-    font-family: 'PT Sans', sans-serif
+    font-family: 'Montserrat', sans-serif
+    font-size: 48px
+    font-style: normal  
+    font-weight: 500
+    line-height: 120%
+    olor: $textColorB
 
 p
     font-family: 'PT Sans', sans-serif
     font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: 140%
+    letter-spacing: 0.08px
     color: $textColorB
 
 img
@@ -27,9 +39,10 @@ a
     text-decoration: none
 
 .container
-    max-width: 1270px
-    padding-left: 15px
-    padding-right: 15px
+    max-width: 1285px
+    padding-left: 23px
+    padding-right: 22px
+    margin-right: 100px 
     margin: 0 auto
 
 /* Header */
@@ -39,7 +52,7 @@ header
     background: #F2F2F2
 
 .header
-    padding-top: 59.5px
+    padding-top: 60.5px
     display: flex
     align-items: center
     flex-direction: row
@@ -87,20 +100,13 @@ header
     background: linear-gradient(261deg, #23145F 2.4%, #0D023D 98.97%)
     position: relative
     height: 72.8vh
-    // z-index: 1
-
-.banner-box
-
 
 .banner-left
     display: flex
     flex-direction: column
     justify-content: center
     height: 55vh
-    // position: absolute
-    // top: 21.2%
-    // left: 17.5%
-    
+    margin-left: -4.5px
 
     &__title
         color: $textClorW
@@ -110,7 +116,7 @@ header
         font-weight: 500
         line-height: 120%
         letter-spacing: 0.28px
-        margin-bottom: 20px
+        margin-bottom: 22.5px
         margin-left: -1.5px
         z-index: 10
 
@@ -128,9 +134,8 @@ header
 
     &__buttons
         display: flex
-        gap: 50px
+        gap: 51px
         
-
     &__button-link
         color: $textClorW
         font-family: PT Sans
@@ -138,7 +143,7 @@ header
         font-style: normal
         font-weight: 400
         line-height: 130%
-        padding: 17px 31px
+        padding: 17px 32px
         border: 1px solid #FFF
         box-shadow: 0px 4px 8px 0px rgba(13, 4, 51, 0.15), 0px 0px 4px 0px rgba(13, 4, 51, 0.04)
         margin-left: 3.6px
@@ -170,11 +175,85 @@ header
         box-shadow: 0 0 15px #D09B4B
 
 .banner-right
-    // z-index: 2
 
     &__img
         position: absolute
         top: 0
         right: 0
         height: 72.8vh
+
+/* About company */ 
+
+.aboutСompany
+    background: $backgroundColor
+    position: relative
+
+.overlay
+    position: absolute
+    top: -154px
+    left: calc(50vw - $widthSite/2)
+    max-width: 1330px
+
+.company
+    background: $backgroundColor
+    padding-top: 75px
+    display: flex
+    gap: 18.4%
+    margin-bottom: 40px
+
+    &__img
+        margin-left: 52px
+        width: 100%
+        height: 100%
+
+.company-description
+    display: flex
+    flex-direction: column
+    gap: 20px
+    margin-top: 78px
+    
+
+    &__p
+        margin-right: 60px
+
+.advantages
+    
+    &__title
+        display: flex
+        justify-content: center
+        margin-bottom: 40px
         
+
+    &__p-box
+        display: flex
+        gap: 250px
+        align-items: center
+        margin-bottom: 300px
+        // margin-right: 95px
+        // margin-left: 15px
+        // margin-left: 0px
+        transition: 2s
+
+    // &__p-box:hover
+    //     margin-left: 10px
+        
+        
+        
+
+    &__p
+        position: absolute
+        width: 159px
+        margin-left: 40px
+    
+    &__p-big
+        width: 224px
+
+    &__p-border
+        position: relative
+        width: 107px
+        height: 107px
+        border-top: 8px solid #F9DC78
+        border-bottom: 8px solid #F9DC78
+        border-left: 8px solid #F9DC78
+        display: flex
+        align-items: center
