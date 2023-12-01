@@ -195,7 +195,7 @@ header {
 .overlay {
   position: absolute;
   top: -154px;
-  left: calc(50vw - 642.5px);
+  left: calc(50vw - 665px);
   max-width: 1330px;
 }
 
