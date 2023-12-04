@@ -46,7 +46,6 @@ a {
   max-width: 1285px;
   padding-left: 23px;
   padding-right: 22px;
-  margin-right: 100px;
   margin: 0 auto;
 }
 
@@ -263,10 +262,16 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #F2F2F2;
-  margin-bottom: 200px;
 }
 .goods__title {
   margin-bottom: 40px;
+}
+.goods__button {
+  margin-bottom: 80px;
+}
+.goods__button:hover {
+  background: #D07D00;
+  box-shadow: 0 0 15px #D09B4B;
 }
 
 .goods-box {
@@ -314,7 +319,7 @@ header {
   left: 0;
   bottom: 0px;
   width: 0;
-  height: 1px;
+  height: 2.5px;
   background-color: #000;
 }
 .goods-section__title:hover:before {
@@ -358,15 +363,6 @@ header {
   bottom: 20px;
   right: 20px;
 }
-.goods-section__button {
-  border: 1px solid #D9D9D9;
-  box-shadow: 0px 4px 8px 0px rgba(172, 80, 0, 0.15), 0px 0px 4px 0px rgba(172, 80, 0, 0.04);
-}
-
-.goods__button:hover {
-  background: #D07D00;
-  box-shadow: 0 0 15px #D09B4B;
-}
 
 .img-ink {
   width: 251px;
@@ -375,4 +371,59 @@ header {
 
 .contacts {
   background: linear-gradient(261deg, #23145F 2.4%, #0D023D 98.97%);
+  margin-top: 1555px;
+  padding-top: 370px;
+  display: flex;
+  justify-content: center;
+}
+.contacts__title {
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+
+.contacts-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  row-gap: 40px;
+  margin-bottom: 60px;
+}
+
+.contact {
+  max-width: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__photo {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  max-width: 280px;
+}
+.contact__position {
+  padding-left: 10px;
+  padding-right: 0px;
+  max-width: 240px;
+  position: absolute;
+  bottom: 140px;
+  left: 15px;
+  background: #F9DC78;
+}
+.contact__name {
+  color: #FFF;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.contact__number {
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */

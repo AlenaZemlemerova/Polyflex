@@ -42,7 +42,7 @@ a
     max-width: 1285px
     padding-left: 23px
     padding-right: 22px
-    margin-right: 100px 
+    // margin-right: 100px 
     margin: 0 auto
 
 /* Header */
@@ -260,10 +260,17 @@ header
     flex-direction: column
     align-items: center
     background-color: $backgroundColor
-    margin-bottom: 200px
+    
 
     &__title
        margin-bottom: 40px
+
+    &__button
+        margin-bottom: 80px
+
+    &__button:hover
+        background: #D07D00
+        box-shadow: 0 0 15px $buttonColor  
     
 .goods-box
     display: grid
@@ -309,7 +316,7 @@ header
         left: 0
         bottom: 0px
         width: 0
-        height: 1px
+        height: 2.5px
         background-color: $textColorB
     
     &__title:hover:before 
@@ -352,14 +359,6 @@ header
         position: absolute
         bottom: 20px
         right: 20px
-    
-    &__button
-        border: 1px solid #D9D9D9
-        box-shadow: 0px 4px 8px 0px rgba(172, 80, 0, 0.15), 0px 0px 4px 0px rgba(172, 80, 0, 0.04)
-
-.goods__button:hover
-    background: #D07D00
-    box-shadow: 0 0 15px $buttonColor   
 
 
 .img-ink
@@ -368,6 +367,60 @@ header
 
 .contacts
     background: $mainColorGradient
+    margin-top: 1555px
+    padding-top: 370px
+    display: flex
+    justify-content: center
+    
+
+    &__title
+        display: flex
+        justify-content: center
+        color: $textClorW
+        margin-bottom: 40px
+
+.contacts-box
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    column-gap: 200px
+    row-gap: 40px
+    margin-bottom: 60px
+    
+
+.contact
+    max-width: 280px
+    position: relative
+    display: flex
+    align-items: center
+    flex-direction: column
+
+    &__photo
+        margin-top: 0px
+        margin-bottom: 15px
+        max-width: 280px
         
+    &__position
+        padding-left: 10px
+        padding-right: 0px
+        max-width: 240px
+        position: absolute
+        bottom: 140px
+        left: 15px
+        background: $frameColor
 
+    &__name
+        color: $textClorW
+        text-align: center
+        font-family: PT Sans
+        font-size: 24px
+        font-style: normal
+        font-weight: 400
+        line-height: 140%
+        margin-bottom: 10px
 
+    &__number
+        color: $textClorW
+
+// .contact:last-child
+//     margin-right: 0px
