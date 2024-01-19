@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/animation.css" />
     <script src="script/script.js" async></script>
     <script src="script/contacts.js" async></script>
+    <script src="script/slider.js" async></script>
   </head>
   <body>
     <header>
@@ -17,12 +18,12 @@
             ><img class="header__logo" src="img/logo.png" alt="Logo"
           /></a>
           <nav class="header__nav">
-            <a class="header__link" href="#">О компании</a>
-            <a class="header__link" href="#">Каталог товаров</a>
-            <a class="header__link" href="#">Производство</a>
+            <a class="header__link" href="#aboutСompany">О компании</a>
+            <a class="header__link" href="#goods">Каталог товаров</a>
+            <a class="header__link" href="#employees">Производство</a>
             <a class="header__link" href="#">Сервис</a>
-            <a class="header__link" href="#">Новости</a>
-            <a class="header__link" href="#">Контакты</a>
+            <a class="header__link" href="#news">Новости</a>
+            <a class="header__link" href="#contacts">Контакты</a>
           </nav>
         </div>
       </div>
@@ -37,10 +38,12 @@
               для глубокой печати.
             </h5>
             <div class="banner-left__buttons">
-              <a class="banner-left__button-link" href="#"
+              <a class="banner-left__button-link" href="#aboutСompany"
                 >Подробнее о компании</a
               >
-              <a class="banner-left__button-form button-style" href="#">Оформить заявку</a>
+              <a class="banner-left__button-form button-style" href="#request"
+                >Оформить заявку</a
+              >
             </div>
           </div>
           <div class="banner-right">
@@ -55,7 +58,7 @@
     </section>
     <section class="aboutСompany">
       <div class="container overlay">
-        <div class="company">
+        <div class="company" id="aboutСompany">
           <img class="company__img" src="img/about-company.jpg" alt="Pantone" />
           <div class="company-description">
             <p class="company-description__p">
@@ -99,7 +102,7 @@
             </div>
           </div>
         </div>
-        <div class="goods">
+        <div class="goods" id="goods">
           <h2 class="goods__title">Товары</h2>
           <div class="goods-box">
             <div class="goods-section">
@@ -161,11 +164,273 @@
     </section>
     <section class="contacts">
       <div class="container">
-        <h2 class="contacts__title">Наши сотрудники</h2>
-        <div class="contacts-box">
-          
-        </div>      
+        <h2 class="contacts__title" id="employees">Наши сотрудники</h2>
+        <div class="contacts-box"></div>
       </div>
     </section>
+    <section class="request">
+      <div class="container">
+        <h2 class="request__title" id="request">Оформить заявку</h2>
+        <div class="request-box">
+          <div class="request__form">
+            <form class="questionnaire" action="send.php" method="post">
+              <input
+                class="questionnaire__input"
+                type="text"
+                name="name"
+                placeholder="Ваше имя, фамилия*"
+                required
+              />
+              <input
+                class="questionnaire__input"
+                type="text"
+                name="company"
+                placeholder="Название вашей фирмы*"
+                required
+              />
+              <input
+                class="questionnaire__input"
+                type="text"
+                name="city"
+                placeholder="Город в котором вы находитесь"
+              />
+              <input
+                class="questionnaire__input"
+                type="text"
+                name="transport"
+                placeholder="Транспортная компания"
+              />
+              <input
+                class="questionnaire__input"
+                type="tel"
+                name="phone"
+                placeholder="Телефон для связи*"
+                required
+              />
+              <input
+                class="questionnaire__input"
+                type="email"
+                name="email"
+                placeholder="Ваш Email (для ответа)"
+              />
+              <input
+                class="questionnaire__input"
+                type="url"
+                name="website"
+                placeholder="Адрес вашего сайта (если есть)"
+              />
+              <textarea
+                class="questionnaire__textarea"
+                name="massage"
+                cols="100"
+                rows="4"
+                placeholder="Ваше сообщение*"
+                required
+              ></textarea>
+              <div class="recaptcha">
+                <img src="img/recaptcha.jpg" alt="Recaptcha" />
+              </div>
+              <input
+                class="questionnaire__submit"
+                type="submit"
+                name="Submit"
+                value="Отправить"
+              />
+              <p class="request__term-of-use">
+                Отправка заявки, означает Ваше согласие с
+                <a class="request__term-of-use_link" href="#"
+                  >пользовательским соглашением.</a
+                >
+              </p>
+            </form>
+          </div>
+          <div class="request-info">
+            <h3 class="request-info__title">Наши контакты</h3>
+            <div class="request-info__block">
+              <img
+                class="request-info__img"
+                src="img/request-location.svg"
+                alt="Location"
+              />
+              <p class="request-info__p">
+                Адрес офиса: г. Екатеринбург, ул. Ключевская 12 [подъезд №2,
+                кнопка 2], офис.15 (район центрального стадиона)
+              </p>
+            </div>
+            <div class="request-info__block">
+              <img
+                class="request-info__img"
+                src="img/request-time.svg"
+                alt="Time"
+              />
+              <p class="request-info__p">
+                График работы: Пн-Пт с 9:00 до 17:00 Без перерыва на обед
+              </p>
+            </div>
+            <div class="request-info__block">
+              <img
+                class="request-info__img"
+                src="img/request-phone.svg"
+                alt="Phone"
+              />
+              <p class="request-info__p">
+                Наш контактный телефон: +7 (343) 263-71-05; 263-71-35 e-mail:
+                p-flex@inbox.ru
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="container">
+        <div class="news-box">
+          <h2 class="news__title">Новости</h2>
+          <div class="slider-container">
+            <button
+              class="prev-button"
+              aria-label="Посмотреть предыдущий слайд"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="70"
+                height="44"
+                viewBox="0 0 70 44"
+                fill="none"
+              >
+                <path
+                  d="M0 22.1375L26.25 43.75V26.25L70 26.25V17.5L26.25 17.5L26.25 0L0 22.1375Z"
+                  fill="#23145F"
+                />
+              </svg>
+            </button>
+            <div class="slider">
+              <div class="slider__new">
+                <p class="slider__title"><a href="#">Распродажа</a></p>
+                <p class="slider__text">
+                  Распродажа складских остатков и прочих товарных позици
+                </p>
+              </div>
+              <div class="slider__new">
+                <p class="slider__title">31/05/2023</p>
+                <p class="slider__text">
+                  Наша компания "Полифлекс", увеличивает производственные
+                  площади и переезжает на новый склад по адресу: г. Берёзовский,
+                  Свердловская область, территория Западная Промзона, 23А
+                </p>
+              </div>
+              <div class="slider__new">
+                <p class="slider__title">12/04/2022</p>
+                <p class="slider__text">
+                  Производитель печатных красок "Полифлекс" продолжает работать
+                  в обычном режиме. Сохраняя качество нашей продукции и времени
+                  ее доставки до наших клиентов.Телефон для связи с нашими
+                  специалистами +7 (343) 380-53-93 или 263-71-35
+                </p>
+              </div>
+            </div>
+            <button class="next-button" aria-label="Посмотреть следующий слайд">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="70"
+                height="44"
+                viewBox="0 0 70 44"
+                fill="none"
+              >
+                <path
+                  d="M70 21.6125L43.75 0V17.5L0 17.5V26.25L43.75 26.25V43.75L70 21.6125Z"
+                  fill="#23145F"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map" id="contacts">
+      <div class="container">
+        <div class="map-block">
+          <h2 class="map__title">Контакты</h2>
+          <div class="map-content">
+            <div class="map-left">
+              <div class="map-left__description">
+                <img
+                  class="map-left__img"
+                  src="img/icon-location.jpg"
+                  alt="Location"
+                />
+                <p class="map-left__text">
+                  Адрес офиса: г. Екатеринбург, ул. Ключевская 12 [подъезд №2,
+                  кнопка 2], офис.15 (район центрального стадиона).
+                </p>
+              </div>
+              <div class="map-left__description">
+                <img
+                  class="map-left__img"
+                  src="img/icon-time.jpg"
+                  alt="Icon time"
+                />
+                <p class="map-left__text map-left__text-mini">
+                  График работы: Пн-Пт с 9:00 до 17:00 Без перерыва на обед
+                </p>
+              </div>
+              <div class="map-left__description">
+                <img
+                  class="map-left__img"
+                  src="img/icon-phone.jpg"
+                  alt="Phone"
+                />
+                <p class="map-left__text">
+                  Наш контактный телефон: +7 (343) 263-71-05; 263-71-35 e-mail:
+                  p-flex@inbox.ru
+                </p>
+              </div>
+            </div>
+            <div class="map-right">
+              <img src="img/map.png" alt="Map" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__img">
+            <a href="index.html"
+              ><img class="footer__logo" src="img/logo-footer.png" alt="Logo"
+            /></a>
+          </div>
+          <nav class="footer__nav">
+            <a class="footer__link" href="#aboutСompany">О компании</a>
+            <a class="footer__link" href="#goods">Каталог товаров</a>
+            <a class="footer__link" href="#employees">Производство</a>
+            <a class="footer__link" href="#">Сервис</a>
+            <a class="footer__link" href="#news">Новости</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
+          </nav>
+          <div class="footer__contacts">
+            <div class="footer__contacts-block">
+              <img
+                class="footer__contacts-icon"
+                src="img/request-location.svg"
+                alt="Location"
+              />
+              <p class="footer__contacts-text">
+                г. Екатеринбург, ул. Ключевская 12
+              </p>
+            </div>
+            <div class="footer__contacts-block">
+              <img class="footer__contacts-icon" src="img/request-phone.svg" alt="Phone" />
+              <p class="footer__contacts-text footer__contacts-text-mini">+7 (343) 263-71-05 +7  (343) 263-71-35</p>
+            </div>
+            <div class="footer__contacts-block">
+              <img class="footer__contacts-icon" src="img/icon-email.svg" alt="Email" />
+              <p class="footer__contacts-text">e-mail: p-flex@inbox.ru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
