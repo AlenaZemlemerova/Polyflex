@@ -7,15 +7,19 @@
     padding: 0
     box-sizing: border-box
 
-// ::-webkit-scrollbar 
-//   width: 0
+// Убираем полосу прокрутки //
+::-webkit-scrollbar 
+  width: 0
 
+// Делаем переход по якарям плавным //
 html
     scroll-behavior: smooth
 
+// Для всего сайта устанавливаем цвет фона //
 body
     background-color: $backgroundColor
 
+// Для всех заголовков прописываем стиль //
 h2
     font-family: 'Montserrat', sans-serif
     font-size: 48px
@@ -24,6 +28,7 @@ h2
     line-height: 120%
     olor: $textColorB
 
+// Для всех параграфов прописываем стиль //
 p
     font-family: 'PT Sans', sans-serif
     font-size: 20px
@@ -36,7 +41,8 @@ p
 img
     border: none
     color: none
-    
+
+// Убираем подчеркивание для всех ссылок //   
 a
     text-decoration: none
 

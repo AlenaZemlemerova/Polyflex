@@ -10,7 +10,6 @@ let slideIndexTwo = 1;
 let maxSlideIndexOne = slideCount - 2;
 let maxSlideIndexTwo = slideCount - 1;
 
-
 // Устанавливаем обработчики событий для кнопок
 prevButton.addEventListener('click', showPreviousSlide);
 nextButton.addEventListener('click', showNextSlide);
