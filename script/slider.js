@@ -32,8 +32,8 @@ function showNextSlide() {
     if(slideIndexTwo === maxSlideIndexTwo){
         slides[slideIndex].style.animation = 'slide-left 1s ease-in-out reverse both';
         updateSlider();
+
     } else {
-        
         slideIndexOne += 1;
         slideIndexTwo += 1;   
         slides[slideIndexOne].style.animation = 'slide-left 1s ease-in-out both';     
@@ -48,7 +48,6 @@ function updateSlider() {
       // slide.style.animation = 'slide-left 1s ease-in-out both';
       slide.style.display = 'flex'; 
     } else {
-      
       slide.style.display = 'none';
     }
   });

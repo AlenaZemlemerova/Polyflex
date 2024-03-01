@@ -12,30 +12,47 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="header">
-          <a class="header__logo" href="index.html"
-            ><img class="header__logo" src="img/logo.png" alt="Logo"
-          /></a>
-          <nav class="header__nav">
-            <a class="header__link" href="#aboutСompany">О компании</a>
-            <a class="header__link" href="#goods">Каталог товаров</a>
-            <a class="header__link" href="#employees">Наши сотрудники</a>
-            <!-- <a class="header__link" href="#">Сервис</a> -->
-            <a class="header__link" href="#news">Новости</a>
-            <a class="header__link" href="#contacts">Контакты</a>
+      <div class="header container">
+        <details class="burger-menu">
+          <summary class="burger-menu__summary">
+            <svg class="ham1" viewBox="0 0 100 100" width="25" onclick="this.classList.toggle('active')">
+              <path class="top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+              <path class="middle" d="m 30,50 h 40" />
+              <path class="bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+          </summary>
+          <div class="burger-menu__content">
+            <nav class="burger-menu__link-box">
+            <a class="burger-menu__link" href="#aboutСompany">О компании</a>
+            <a class="burger-menu__link" href="#goods">Каталог товаров</a>
+            <a class="burger-menu__link" href="#employees">Наши сотрудники</a>
+            <!-- <a class="burger-menu__link" href="#">Сервис</a> -->
+            <a class="burger-menu__link" href="#news">Новости</a>
+            <a class="burger-menu__link" href="#contacts">Контакты</a>
           </nav>
-        </div>
+          </div>
+        </details>
+        
+        <a class="header__logo" href="index.html"
+          ><img class="header__logo" src="img/logo.png" alt="Logo"
+        /></a>
+        <nav class="header__nav">
+          <a class="header__link" href="#aboutСompany">О компании</a>
+          <a class="header__link" href="#goods">Каталог товаров</a>
+          <a class="header__link" href="#employees">Наши сотрудники</a>
+          <!-- <a class="header__link" href="#">Сервис</a> -->
+          <a class="header__link" href="#news">Новости</a>
+          <a class="header__link" href="#contacts">Контакты</a>
+        </nav>
       </div>
     </header>
-    <section class="banner">
+    <main class="banner">
       <div class="container">
         <div class="banner-box">
           <div class="banner-left">
             <h1 class="banner-left__title">Всё для флексопечати!</h1>
             <h5 class="banner-left__subtitle">
-              Первый на Урале производитель флексографических красок и красок
-              для глубокой печати.
+              Первый на Урале производитель флексографических красок и красок для глубокой печати.
             </h5>
             <div class="banner-left__buttons">
               <a class="banner-left__button-link" href="#aboutСompany"
@@ -46,6 +63,7 @@
               >
             </div>
           </div>
+          <div class="banner-border"></div>
           <div class="banner-right">
             <img
               class="banner-right__img"
@@ -55,31 +73,33 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
     <section class="aboutСompany">
       <div class="container overlay">
         <div class="company" id="aboutСompany">
           <img class="company__img" src="img/about-company.jpg" alt="Pantone" />
           <div class="company-description">
-            <p class="company-description__p">
-              С 2008 года мы успешно производим краски и снабжаем типографии
-              расходными материалами. Основным направлением деятельности нашей
-              компании является поставка и продажа расходных материалов для
-              производства упаковки, флексографской и глубокой печати.
+            <p class="company-description__p company-description__p-one">
+              С&nbsp;2008 года мы&nbsp;успешно производим краски и&nbsp;снабжаем
+              типографии расходными материалами. Основным направлением
+              деятельности нашей компании является поставка и&nbsp;продажа
+              расходных материалов для производства упаковки, флексографской
+              и&nbsp;глубокой печати.
             </p>
             <p class="company-description__p">
-              С 2011 года "ПолиФлекс" предлагает своим клиентам не только
-              импортные европейские высокопигментированные флексографские
-              краски, теперь компания выпускает краски отечественного
-              производства из импортных компонентов и по согласованным
-              рецептурам.
+              С&nbsp;2011 года &laquo;ПолиФлекс&raquo; предлагает своим клиентам
+              не&nbsp;только импортные европейские высокопигментированные
+              флексографские краски, теперь компания выпускает краски
+              отечественного производства из&nbsp;импортных компонентов
+              и&nbsp;по&nbsp;согласованным рецептурам.
             </p>
             <p class="company-description__p">
-              Мы постоянно наращиваем наши возможности, расширяем спектр
-              расходных материалов, которые мы можем предложить нашим клиентам и
-              партнёрам. Наша компания всегда учитывает требования наших
-              клиентов к качеству печати и срокам поставки, постоянно предлагает
-              самые современные, качественные и эффективные материалы.
+              Мы&nbsp;постоянно наращиваем наши возможности, расширяем спектр
+              расходных материалов, которые мы&nbsp;можем предложить нашим
+              клиентам и партнёрам. Наша компания всегда учитывает требования
+              наших клиентов к&nbsp;качеству печати и&nbsp;срокам поставки,
+              постоянно предлагает самые современные, качественные
+              и&nbsp;эффективные материалы.
             </p>
           </div>
         </div>
@@ -152,13 +172,15 @@
                 >
               </div>
               <img
-                class="goods-section__img"
+                class="goods-section__img goods-section__img-equipments"
                 src="img/goods-section-equipment.jpg"
                 alt="Equipments"
               />
             </div>
           </div>
-          <a class="goods__button button-style" href="#">Связаться с сотрудником</a>
+          <a class="goods__button button-style" href="#"
+            >Связаться с сотрудником</a
+          >
         </div>
       </div>
     </section>
@@ -228,7 +250,7 @@
                 required
               ></textarea>
               <div class="recaptcha">
-                <img src="img/recaptcha.jpg" alt="Recaptcha" />
+                <img class="recaptcha__img" src="img/recaptcha.jpg" alt="Recaptcha" />
               </div>
               <input
                 class="questionnaire__submit"
@@ -292,6 +314,7 @@
               aria-label="Посмотреть предыдущий слайд"
             >
               <svg
+                class="prev-button-svg"
                 xmlns="http://www.w3.org/2000/svg"
                 width="70"
                 height="44"
@@ -331,6 +354,7 @@
             </div>
             <button class="next-button" aria-label="Посмотреть следующий слайд">
               <svg
+                class="prev-button-svg"
                 xmlns="http://www.w3.org/2000/svg"
                 width="70"
                 height="44"
@@ -387,7 +411,13 @@
               </div>
             </div>
             <div class="map-right">
-              <img src="img/map.png" alt="Map" />
+              <script
+                class="map-desctop"
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7f9fd58b14a689b88ce4f88854e6dfda3bd24d57f27d2aaf405269f27f2c3ef2&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
             </div>
           </div>
         </div>
@@ -417,15 +447,25 @@
                 alt="Location"
               />
               <p class="footer__contacts-text">
-                г. Екатеринбург, ул. Ключевская 12
+                г. Екатеринбург, ул.&nbspКлючевская 12
               </p>
             </div>
             <div class="footer__contacts-block">
-              <img class="footer__contacts-icon" src="img/request-phone.svg" alt="Phone" />
-              <p class="footer__contacts-text footer__contacts-text-mini">+7 (343) 263-71-05 +7  (343) 263-71-35</p>
+              <img
+                class="footer__contacts-icon"
+                src="img/request-phone.svg"
+                alt="Phone"
+              />
+              <p class="footer__contacts-text footer__contacts-text-mini">
+                +7&nbsp(343) 263-71-05 +7&nbsp(343) 263-71-35
+              </p>
             </div>
             <div class="footer__contacts-block">
-              <img class="footer__contacts-icon" src="img/icon-email.svg" alt="Email" />
+              <img
+                class="footer__contacts-icon"
+                src="img/icon-email.svg"
+                alt="Email"
+              />
               <p class="footer__contacts-text">e-mail: p-flex@inbox.ru</p>
             </div>
           </div>
